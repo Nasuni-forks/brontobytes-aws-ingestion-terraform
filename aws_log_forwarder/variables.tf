@@ -140,6 +140,11 @@ variable "forwarder_logs" {
   }
 }
 
+variable "filter_pattern" {
+  description = "Filter for Cloudwatch Subscription"
+  default = ""
+}
+
 variable "attributes" {
   description = "Attributes that apply to all data forwarded, e.g. region=us-east-1"
   type        = map(string)
